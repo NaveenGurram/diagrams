@@ -78,3 +78,4 @@ with Diagram(show=True, filename='phase3'):
             phase3Mod >> Edge(label="Writes To") >> oracle
             rtmUi >> Edge(label="Uses") >> Lambda("EntityProfile")
             rtm >> Edge(label="Reads") >> oracle
+            rtm >> Edge(label="Uses") >> Lambda("RiskRulesEngine")
